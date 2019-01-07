@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Calculator"
+             x:Class="Calculator.MainPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.Resources>
+            <Style TargetType="Entry">
+                <Setter Property="FontSize" Value="50"/>
+                <Setter Property="IsEnabled" Value="False"/>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="FontSize" Value="Large"/>
+            </Style>
+        </Grid.Resources>
+
+        <Entry x:Name="Et_Visor" Grid.ColumnSpan="4"/>
+        <Button Grid.Column="0" Grid.Row="1" Text="OFF"/>
+        <Button Grid.Column="1" Grid.Row="1" Text="DEL"/>
+        <Button Grid.Column="2" Grid.Row="1" Text="R"/>
+        <Button Grid.Column="3" Grid.Row="1" Text="/" Clicked="Op_Clicked"/>
+        <Button Grid.Column="0" Grid.Row="2" Text="7" Clicked="Num_Clicked"/>
+        <Button Grid.Column="1" Grid.Row="2" Text="8" Clicked="Num_Clicked"/>
+        <Button Grid.Column="2" Grid.Row="2" Text="9" Clicked="Num_Clicked"/>
+        <Button Grid.Column="3" Grid.Row="2" Text="*" Clicked="Op_Clicked"/>
+        <Button Grid.Column="0" Grid.Row="3" Text="4" Clicked="Num_Clicked"/>
+        <Button Grid.Column="1" Grid.Row="3" Text="5" Clicked="Num_Clicked"/>
+        <Button Grid.Column="2" Grid.Row="3" Text="6" Clicked="Num_Clicked"/>
+        <Button Grid.Column="3" Grid.Row="3" Text="-" Clicked="Op_Clicked"/>
+        <Button Grid.Column="0" Grid.Row="4" Text="1" Clicked="Num_Clicked"/>
+        <Button Grid.Column="1" Grid.Row="4" Text="2" Clicked="Num_Clicked"/>
+        <Button Grid.Column="2" Grid.Row="4" Text="3" Clicked="Num_Clicked"/>
+        <Button Grid.Column="3" Grid.Row="4" Text="+" Clicked="Op_Clicked"/>
+        <Button Grid.Column="0" Grid.Row="5" Text="7" Clicked="Num_Clicked"/>
+        <Button Grid.Column="1" Grid.Row="5" Text="8" Clicked="Num_Clicked"/>
+        <Button Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" Text="="/>
+    </Grid>
+
+</ContentPage>
