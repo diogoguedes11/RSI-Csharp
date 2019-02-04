@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RestAPI.PostDetails" Title="Post Details">
+    <ContentPage.Content>
+        <StackLayout Margin="15">
+            <Label Text="User Id:" FontAttributes="Bold"/>
+            <Label Text="{Binding userId}"/>
+            <Label Text="Id:" FontAttributes="Bold"/>
+            <Label Text="{Binding id}"/>
+            <Label Text="Title" FontAttributes="Bold"/>
+            <Label Text="{Binding title}"/>
+            <Label Text="Body" FontAttributes="Bold"/>
+            <Label Text="{Binding body}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
